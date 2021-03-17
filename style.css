@@ -221,3 +221,35 @@ header hgroup button {
 	line-height: 1.5;
 	font-size: 1.2rem;
 }
+
+/* Three */
+.three {
+	display: flex;
+	justify-content: space-between;
+}
+
+.three article {
+	flex: 0 0 70%;
+
+	padding: 50px 50px 50px 0;
+}
+.three article h2 {
+	font-size: 2.2rem;
+}
+.three article img {
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+	margin: 25px 0;
+}
+.three article p {
+	font-size: 1.1rem;
+	letter-spacing: 1.5px;
+	line-height: 1.8;
+}
+
+.three aside {
+	flex: 0 0 25%;
+	border: 1px solid black;
+}
+
