@@ -208,3 +208,16 @@ header hgroup button {
 	letter-spacing: 1.5px;
 	margin-top: 20px;
 }
+
+.slide-text {
+	margin-top: 25px;
+}
+.slide-text h4 {
+	font-size: 1.8rem;
+	letter-spacing: 1.5px;
+}
+.slide-text p {
+	margin: 20px;
+	line-height: 1.5;
+	font-size: 1.2rem;
+}
