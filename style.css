@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 :root {
 	--font-family: "Roboto", sans-serif;
 	--font-size: 16px;
@@ -66,6 +66,145 @@ h2 {
 .transparent:hover {
 	background-color: rgba(255, 255, 255, 0.5);
 }
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: var(--secondary);
+}
+section {
+	padding: 80px 0;
+}
 
 /* nav */
 
+nav {
+	background-color: var(--white);
+	padding: 10px 0;
+}
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav .container ul {
+	display: flex;
+	align-items: center;
+}
+nav .container ul li {
+	margin: 0 15px;
+	padding: 8px;
+}
+nav ul li a {
+	letter-spacing: 1.5px;
+}
+nav ul li:hover {
+	background-color: var(--primary-hover);
+	border-radius: 5px;
+}
+nav ul li:hover a {
+	color: var(--white);
+}
+
+nav .container .logo {
+	font-size: 1.5rem;
+}
+
+/* HEADER */
+
+header {
+	background-image: url(images/banner.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header hgroup {
+	text-align: center;
+	color: var(--white);
+}
+
+header hgroup h1 {
+	font-size: 3rem;
+}
+header hgroup h4 {
+	margin: 30px 0;
+	font-size: 1.8rem;
+}
+header hgroup h4 span {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+header hgroup button {
+	margin: 0 20px;
+}
+
+/* ABOUT */
+
+.about hgroup {
+	text-align: center;
+	color: var(--text-color);
+}
+.about hgroup h2 {
+	font-size: 2.3rem;
+}
+.about hgroup h4 {
+	font-size: 1.5rem;
+	margin: 30px 0;
+}
+
+.about .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+.card {
+	flex: 0 0 28%;
+	border: 1px solid var(--text-color);
+	padding: 20px 30px;
+	text-align: center;
+}
+.card i {
+	font-size: 2rem;
+	color: var(--white);
+	background-color: var(--primary);
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	border-radius: 50%;
+	border: 5px solid var(--white);
+	box-shadow: 0 0 1px black;
+}
+.card .text {
+	margin: 20px 0;
+}
+.text h3 {
+	font-size: 1.5rem;
+}
+.text p {
+	line-height: 1.5;
+	letter-spacing: 1.5px;
+	margin-top: 20px;
+}
+
+/* SLIDER */
+.slider {
+	background-color: var(--secondary);
+	color: var(--white);
+	text-align: center;
+}
+
+.slider hgroup {
+	margin-bottom: 50px;
+}
+.slider hgroup h2 {
+	font-size: 2.4rem;
+}
+.slider hgroup h4 {
+	font-size: 1.5rem;
+	letter-spacing: 1.5px;
+	margin-top: 20px;
+}
