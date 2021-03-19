@@ -16,10 +16,14 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	font-family: var(--font-family);
 	font-size: var(--font-size);
+	position: relative;
 }
 h1,
 h2,
@@ -49,23 +53,41 @@ h2 {
 	color: var(--white);
 	letter-spacing: 1.5px;
 	border-radius: 8px;
+	cursor: pointer;
 }
 
 .blue {
-	background-color: var(--primary);
+	background: linear-gradient(
+		90deg,
+		rgb(98, 157, 209),
+		rgb(98, 157, 209),
+		rgb(98, 157, 209),
+		rgb(200, 218, 235),
+		rgb(98, 157, 209),
+		rgb(98, 157, 209),
+		rgb(98, 157, 209)
+	);
+	background-size: 400% 100%;
 	border: 2px solid var(--primary);
 }
 .blue:hover {
-	background-color: var(--primary-hover);
-	border-color: var(--primary-hover);
+	background-position: 100% 0;
 }
 
 .transparent {
-	background-color: transparent;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.5),
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0)
+	);
+	background-size: 400% 100%;
 	border: 2px solid var(--white);
 }
 .transparent:hover {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-position: 100% 0;
 }
 ul {
 	list-style: none;
@@ -81,8 +103,11 @@ section {
 /* nav */
 
 nav {
+	position: sticky;
 	background-color: var(--white);
 	padding: 10px 0;
+	top: 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.65);
 }
 nav .container {
 	display: flex;
@@ -110,6 +135,17 @@ nav ul li:hover a {
 
 nav .container .logo {
 	font-size: 1.5rem;
+}
+/* onTop */
+.onTop {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-size: 1rem;
+	padding: 15px 10px;
+	background-color: var(--primary);
+	color: white;
+	border-radius: 10px;
 }
 
 /* HEADER */
@@ -166,6 +202,9 @@ header hgroup button {
 	border: 1px solid var(--text-color);
 	padding: 20px 30px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .card i {
 	font-size: 2rem;
@@ -173,7 +212,9 @@ header hgroup button {
 	background-color: var(--primary);
 	width: 100px;
 	height: 100px;
-	line-height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	border-radius: 50%;
 	border: 5px solid var(--white);
@@ -209,9 +250,20 @@ header hgroup button {
 	letter-spacing: 1.5px;
 	margin-top: 20px;
 }
+.item {
+	display: flex;
+}
+.slide-card {
+	flex: 0 0 60%;
+}
+.slide-card img {
+	width: 100%;
+	display: block;
+}
 
 .slide-text {
 	margin-top: 25px;
+	flex: 0 0 40%;
 }
 .slide-text h4 {
 	font-size: 1.8rem;
@@ -261,6 +313,18 @@ header hgroup button {
 
 aside h3 {
 	font-size: 2.4rem;
+}
+.card-social {
+	position: relative;
+	border: 1px solid black;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-text {
+	position: absolute;
+	bottom: 0;
 }
 aside i {
 	font-size: 3rem;
