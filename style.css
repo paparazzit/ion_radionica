@@ -316,24 +316,37 @@ aside h3 {
 }
 .card-social {
 	position: relative;
-	border: 1px solid black;
+
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+aside hr {
+	border: 1px solid var(--primary);
+}
 .card-text {
 	position: absolute;
 	bottom: 0;
+	color: white;
+	background-color: var(--primary);
+	width: 100%;
+	height: 0;
+	transition: var(--transition);
 }
+
 aside i {
 	font-size: 3rem;
 	transition: var(--transition);
 }
 
-aside i:hover {
+aside .card-social:hover i {
 	color: var(--text-color);
 	transform: rotate(360deg) scale(1.1);
+}
+aside .card-social:hover .card-text {
+	height: 35px;
+	padding-top: 8px;
 }
 
 /* footer */
