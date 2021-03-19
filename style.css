@@ -2,8 +2,8 @@
 :root {
 	--font-family: "Roboto", sans-serif;
 	--font-size: 16px;
-	--primary: #629dd1;
-	--primary-hover: #98bcdb;
+	--primary: #629dd1; /*rgb(98, 157, 209)*/
+	--primary-hover: #98bcdb; /*rgb(152, 188, 219)*/
 	--light-gray: #f8f8f8;
 	--secondary: #192024;
 	--text-color: #666f77;
@@ -50,6 +50,7 @@ h2 {
 	letter-spacing: 1.5px;
 	border-radius: 8px;
 }
+
 .blue {
 	background-color: var(--primary);
 	border: 2px solid var(--primary);
