@@ -20,3 +20,17 @@ $(".owl-carousel").owlCarousel({
 		},
 	},
 });
+
+var onTop = $(".onTop");
+
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 300) {
+		console.log("Scrolam Dole: " + $(window).scrollTop());
+		onTop.fadeIn(500).css("cursor", "pointer");
+		onTop.click(function () {
+			$(window).scrollTop(0);
+		});
+	} else {
+		onTop.fadeOut(500);
+	}
+});
