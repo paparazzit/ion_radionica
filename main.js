@@ -34,3 +34,17 @@ $(window).scroll(function () {
 		onTop.fadeOut(500);
 	}
 });
+
+$(document).ready(function () {
+	$("form").addClass("form-slideIn");
+	$("form").on("transitionend", function () {
+		$("form").addClass("form-open");
+
+		console.log($(".form-open").width());
+		if ($(".form-open").width() > 450) {
+			$("label").addClass("opacity");
+			$("form h3").addClass("opacity");
+			$("form button").addClass("opacity");
+		}
+	});
+});

@@ -375,6 +375,77 @@ footer p span {
 	border-right: 1px solid white;
 }
 
+/* SING UP */
+.sing-up {
+	background: url(images/banner.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 82vh;
+	color: white;
+	text-align: center;
+}
+.sing-up h2 {
+	font-size: 2.5rem;
+}
+.sing-up form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50px;
+	background-color: rgba(228, 52, 228, 0.37);
+	margin: 30px auto;
+	padding: 30px;
+	border-radius: 50px;
+	transform: translateX(-250%);
+	overflow: hidden;
+	transition: 0.8s all ease;
+}
+.form-slideIn {
+	transform: translateX(0%) !important;
+}
+.form-open {
+	width: 50% !important;
+}
+form h3 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+form label {
+	position: relative;
+	/* border: 1px solid white; */
+	margin: 0 auto 30px auto;
+	width: 80%;
+}
+form label,
+form button,
+form h3 {
+	opacity: 0;
+	transition: 0.5s opacity ease-in-out;
+}
+.opacity {
+	opacity: 1 !important;
+}
+
+form label i {
+	color: black;
+	/* background-color: white; */
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.5rem;
+}
+form label input {
+	padding: 8px 0px 8px 40px;
+	font-size: 1rem;
+	width: 100%;
+}
+input::placeholder {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
 /* resopnsive */
 @media (max-width: 500px) {
 	.container {
